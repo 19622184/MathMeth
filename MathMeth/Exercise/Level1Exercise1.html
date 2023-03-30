@@ -1,0 +1,555 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 172);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.texte {
+  background-color: rgb(0, 0, 172);
+  color: white;
+}
+.topnav a.active {
+  background-color: rgb(0, 0, 70);
+  color: white;
+}
+</style>
+</head>
+<style>
+  table {
+    font-family: Calibri;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  td, th {
+    border: 1px solid #000077;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    text-align: center;
+  }
+</style>
+<style>
+  html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.quiz,
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 5px;
+}
+.choices label {
+    display: flex;
+    align-items: center;
+}
+.choices label,
+input[type="radio"] {
+    cursor: pointer;
+}
+input[type="radio"] {
+    margin-right: 8px;
+}
+.view-results {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: inherit;
+    color: white;
+    background: rgb(0, 64, 255);
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-left: 16px;
+    font-size: 20px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+<body>
+<div class="topnav">
+  <a class="texte" style="font-size:30px;font-family: Verdana">MATHMETH</a>
+  <a href="../Home/MainPage.html">Home</a>
+  <a href="../Exercise/MainExer.html">Exercise</a>
+  <a href="../About/About.html">About</a>
+</div>
+<div style="padding-left:16px;font-family:Calibri;font-size:20px">
+    <h2 style="font-size:40px;font-family:Courier New">Introduction Of Numbers I - Exercise 1</h2>
+    <p>Answer all the questions correctly!</p>
+</div>
+<ul class="quiz">
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">1. What number comes after 5?</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="A" /><span
+                        >2</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="B" /><span
+                        >3</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="C" /><span
+                        >4</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="D" /><span
+                        >5</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="E" /><span
+                        >6</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">2. 4 is a number between ... and ...</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question1" value="A" /><span
+                        >1 and 3</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question1" value="B" /><span
+                        >3 and 5</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question1" value="C" /><span
+                        >2 and 4</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question1" value="D" /><span
+                        >4 and 6</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question1" value="E" /><span
+                        >5 and 7</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">3. Name 3 numbers that are bigger than 4!</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question2" value="A" /><span
+                        >2,5,8</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question2" value="B" /><span
+                        >7,3,9</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question2" value="C" /><span
+                        >10,5,6</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question2" value="D" /><span
+                        >3,4,5</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question2" value="E" /><span
+                        >6,7,0</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">4. How do you say 7?</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question3" value="A" /><span
+                        >Five</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question3" value="B" /><span
+                        >Six</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question3" value="C" /><span
+                        >Seven</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question3" value="D" /><span
+                        >Eight</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question3" value="E" /><span
+                        >Nine</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">5. The numbers are bigger than 4, come before 7 are?</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question4" value="A" /><span
+                        >5 and 6</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question4" value="B" /><span
+                        >8 and 9</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question4" value="C" /><span
+                        >1 and 2</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question4" value="D" /><span
+                        >2 and 3</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question4" value="E" /><span
+                        >6 and 7</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">6. How do you say the number that comes after 9?</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question5" value="A" /><span
+                        >Six</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question5" value="B" /><span
+                        >Seven</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question5" value="C" /><span
+                        >Eight</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question5" value="D" /><span
+                        >Nine</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question5" value="E" /><span
+                        >Ten</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">7. Name all numbers that are bigger than 10 and bigger than 5?</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question6" value="A" /><span
+                        >3,4,5,6</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question6" value="B" /><span
+                        >4,5,6,7</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question6" value="C" /><span
+                        >5,6,7,8</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question6" value="D" /><span
+                        >6,7,8,9</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question6" value="E" /><span
+                        >7,8,9,10</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">8. Find the number that comes after the number that comes after 7</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question7" value="A" /><span
+                        >5</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question7" value="B" /><span
+                        >9</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question7" value="C" /><span
+                        >8</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question7" value="D" /><span
+                        >6</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question7" value="E" /><span
+                        >4</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">9. How do you say the number that comes before the number that comes before 8?</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question8" value="A" /><span
+                        >Six</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question8" value="B" /><span
+                        >Seven</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question8" value="C" /><span
+                        >Eight</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question8" value="D" /><span
+                        >Nine</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question8" value="E" /><span
+                        >Ten</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">10. Ten is the number that comes after the number that comes after...</h4>
+        <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+            <li>
+                <label
+                    ><input type="radio" name="question9" value="A" /><span
+                        >The number between 6 and 8</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question9" value="B" /><span
+                        >The number between 4 and 6</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question9" value="C" /><span
+                        >The number between 5 and 7</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question9" value="D" /><span
+                        >The number between 7 and 9</span
+                    ></label
+                >
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question9" value="E" /><span
+                        >The number between 8 and 10</span
+                    ></label
+              >
+            </li>
+        </ul>
+    </li>
+</ul>
+<button class="view-results" onclick="returnScore()">Submit</button>
+<button class="view-results" type="button" onclick="logIn()">Go to Main Page</button>
+<span id="myresults" class="my-results"></span>
+<div style="text-align:center;font-family:Calibri;font-size:15px;color:#dddddd;line-height:50px;">
+    <p>Bearandom.Inc - 2022</p>
+</div>
+<script>
+var answers = ["E","B","C","C","A","E","D","B","A","D"],
+      tot = answers.length;
+  function getCheckedValue(radioName) {
+      var radios = document.getElementsByName(radioName);
+      for (var y = 0; y < radios.length; y++)
+          if (radios[y].checked) return radios[y].value;
+  }
+  function getScore() {
+      var score = 0;
+      for (var i = 0; i < tot; i++)
+          if (getCheckedValue("question" + i) === answers[i]) score += 1;
+      return score;
+  }
+  function returnScore() {
+      document.getElementById("myresults").innerHTML =
+          "Your score is " + getScore() + "/" + tot;
+      if (getScore() > 9) {
+          console.log("Bravo");
+      }
+  }
+  function logIn() {
+      if (getScore() > 9) {
+          window.location = "Level1MainPage.html";
+      }
+  }
+</script>
+</body>
+</html>

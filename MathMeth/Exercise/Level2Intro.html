@@ -1,0 +1,309 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 172);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.texte {
+  background-color: rgb(0, 0, 172);
+  color: white;
+}
+.topnav a.active {
+  background-color: rgb(0, 0, 70);
+  color: white;
+}
+</style>
+<style>
+  table {
+    font-family: Calibri;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  td, th {
+    border: 1px solid #000077;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    text-align: center;
+  }
+</style>
+<style>
+  html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.quiz,
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 5px;
+}
+.choices label {
+    display: flex;
+    align-items: center;
+}
+.choices label,
+input[type="radio"] {
+    cursor: pointer;
+}
+input[type="radio"] {
+    margin-right: 8px;
+}
+.view-results {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: inherit;
+    color: white;
+    background: rgb(255, 64, 0);
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-left: 16px;
+    font-size: 20px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a class="texte" style="font-size:30px;font-family: Verdana">MATHMETH</a>
+  <a href="../Home/MainPage.html">Home</a>
+  <a href="../Exercise/MainExer.html">Exercise</a>
+  <a href="../About/About.html">About</a>
+</div>
+
+<div style="padding-left:16px;font-family:Calibri;font-size:20px">
+  <h2 style="font-size:40px;font-family:Courier New">Arithmetic Operation I</h2>
+  <p style="font-size:20px;font-family:Calibri;">In this material, you will learn about two of the most basic arithmetic operation. They are addition and subtraction. Addition is an action of adding something to something else.</p>
+  <p1 style="line-height:0px">Whereas subtraction is an action where you subtract something to something else. Before learning about addition and subtraction, here's an extended list of number and letters:</p1>
+</div>
+
+<div style="padding-left:16px;font-family:Calibri;font-size:20px">
+  <table style ="line-height: 20px;margin-top: 30px;">
+    <tr>
+      <th>Number</th>
+      <th>Letter</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Zero</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>One</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Two</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Three</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Four</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Five</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Six</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Seven</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Eight</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Nine</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Ten</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Eleven</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Twelve</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Thirteen</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Fourteen</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Fifteen</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Sixteen</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Seventeen</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Eighteen</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Nineteen</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Twenty</td>
+    </tr>
+  </table>
+</div>
+<div style="padding-left:16px;font-family:Calibri;font-size:20px">
+  <p style="font-size:20px;font-family:Calibri;">Let's begin with the addition! Here's an example:</p>
+  <p1 style="line-height:10px;font-size: 40px;">4+3=7</p1>
+  <p style="font-size:20px;font-family:Calibri;">As you can see, 4 added by 3 equals 7. The addition symbol means that the number on the left moves forward towards the number line 3 times</p>
+  <p1 style="line-height:10px;font-size: 40px;">4,</p1>
+  <b style="line-height:10px;font-size: 40px;">5, 6, 7</b>
+  <p style="font-size:20px;font-family:Calibri;line-height:0px">It was shown that it takes 3 numbers for 4 to get to 7 and thus 4+3=7</p>
+</div>
+
+<div style="padding-left: 16px;font-family:Calibri;font-size:20px">
+  <p1 style="font-size:20px;font-family:Calibri;line-height:40px">Now let's see an example of subtraction! Here it is:</p>
+  <p1 style="line-height:10px;font-size: 40px;">7-4=3</p1>
+  <p style="font-size:20px;font-family:Calibri;">As you can see, 7 subtracted by 4 equals 3. The subtraction symbol means that the number on the left moves backward towards the number line 4 times</p>
+  <p1 style="line-height:10px;font-size: 40px;">7,</p1>
+  <b style="line-height:10px;font-size: 40px;">6, 5, 4, 3</b>
+  <p style="font-size:20px;font-family:Calibri;line-height:0px">It was shown that it takes 4 numbers for 7 to get to 3 and thus 7-4=3</p>
+  <p style="font-size:20px;font-family:Calibri;line-height:20px">Before going to the exercise, answer the question below first!</p>
+</div>
+
+<ul class="quiz">
+  <li>
+      <h4 style = "font-family:Calibri;font-size:20px;margin-left: 16px;">1. What is 5+2?</h4>
+      <ul class="choices" style = "font-family:Calibri;font-size:20px;margin-left:16px">
+          <li>
+              <label
+                  ><input type="radio" name="question0" value="A" /><span
+                      >6</span
+                  ></label
+              >
+          </li>
+          <li>
+              <label
+                  ><input type="radio" name="question0" value="B" /><span
+                      >7</span
+                  ></label
+              >
+          </li>
+          <li>
+              <label
+                  ><input type="radio" name="question0" value="C" /><span
+                      >8</span
+                  ></label
+              >
+          </li>
+          <li>
+              <label
+                  ><input type="radio" name="question0" value="D" /><span
+                      >9</span
+                  ></label
+              >
+          </li>
+          <li>
+              <label
+                  ><input type="radio" name="question0" value="E" /><span
+                      >10</span
+                  ></label
+            >
+          </li>
+      </ul>
+  </li>
+</ul>
+<button class="view-results" onclick="returnScore()">Submit</button>
+<button class="view-results" type="button" onclick="logIn()">Start</button>
+<span id="myresults" class="my-results"></span>
+<div style="text-align:center;font-family:Calibri;font-size:15px;color:#dddddd;line-height:50px;">
+  <p>Bearandom.Inc - 2022</p>
+</div>
+<script>
+  var answers = ["B"],
+      tot = answers.length;
+  function getCheckedValue(radioName) {
+      var radios = document.getElementsByName(radioName);
+      for (var y = 0; y < radios.length; y++)
+          if (radios[y].checked) return radios[y].value;
+  }
+  function getScore() {
+      var score = 0;
+      for (var i = 0; i < tot; i++)
+          if (getCheckedValue("question" + i) === answers[i]) score += 1;
+      return score;
+  }
+  function returnScore() {
+      document.getElementById("myresults").innerHTML =
+          "Your score is " + getScore() + "/" + tot;
+      if (getScore() > 0) {
+          console.log("Bravo");
+      }
+  }
+  function logIn() {
+      if (getScore() > 0) {
+          window.location = "Level2Exercise1.html";
+      }
+  }
+</script>
+</body>
+</html>
